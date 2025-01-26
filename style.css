@@ -1,0 +1,284 @@
+/* header part used and styled for image and nav buttons */
+
+#body-header{
+    margin: 0px;
+    height: 65vh;
+    opacity: 0.8;
+    background-image:url(Images/computer-2982270_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: -5px;
+}
+
+/* this part will remove ul li */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 10px;
+}
+/* this part of code will make li to display in inline block at left corner */
+.horizontal-list li{
+    display: inline-block;
+    margin: 5px 8px 8px 0px;
+    font-size: 17px;
+}
+
+.horizontal-list li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+.nav-menu li a:active{
+    color: whitesmoke;
+}
+.nav-menu li a:visited{
+    color: black;
+}
+
+.text-center{
+    text-align: center;
+    font-weight: 50px;
+}
+
+/* name and fontawesome part code */
+
+#name-social-container{
+    margin-top: 21vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 5px 5px #558ABB;
+}
+/* .text-center h1{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+} */
+/* .text-center h1:hover{
+    width: 300px;
+} */
+.social-icon li a i{
+    padding: 10px; 
+    margin: 8px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.social-icon li a i:hover{
+   box-shadow: 0px 0px 6px 4px black;
+}
+/* converting this part into flex, this part comes after about para skip these and go for below part first  */
+
+
+
+/* body part  code (about section )*/
+
+#about{
+    height: auto;
+    width: 100%;
+    position:relative
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    margin-right: 44%;
+    border-radius: 50%;
+}
+#my-image:hover{
+    box-shadow: 0px 0px 10px 8px skyblue;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;  
+}
+/* this piece of code will style the text below your profile pic i.e about section  */
+#about-para{
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
+/* now we have moved to skill part these piece of code is for fontawesome and skill designing part  */
+/* we are chaing this code into flex properties and small desgin for scetion part  */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:target{
+    background-color: #f0f0f0;
+}
+section :nth-child(2n){
+    background-color:#f1e8e829;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: auto;
+    /* flex-direction: column;
+    align-items: center; */
+    font-weight: 600;
+}
+.section-heading span{
+    font-size: 40px;
+    color:#2857a4;
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 0.5rem;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.skills-display{
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.5rem;
+    margin: 20px;
+    /* background-color: lightgrey; */
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+} 
+
+.skill-name span{
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    overflow-wrap: break-word;
+}
+.skill-name span:hover{
+    color: #2857a4;
+}
+.mb-blue{
+    background-color: #2857a4;
+}
+.seventy-percent{
+    width: 70%;
+    height: inherit;
+}
+
+.ninty-percent{
+    width: 90%;
+    height: inherit;
+}
+.mediumseagreen{
+    background-color: mediumseagreen;
+}
+
+/* now we have headed to experience section */
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+/* making box move towards right  */
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    position: absolute;
+    height: 82%;
+    width: 0px;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    
+}
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	height: 0.5rem;
+	width: 0.5rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	right: -12.5%;
+	background-color: red;
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	height: 0.5rem;
+	width: 0.5rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	left: -9.2%;
+	background-color: red;
+}
+/* education part  */
+.education-details {
+    .education-details {
+        width: 70%;
+        margin: auto;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        line-height: 1.5;
+    }
+    .education-details h3 {
+        color: #2857a4;
+        margin: 10px 0;
+    }
+}
