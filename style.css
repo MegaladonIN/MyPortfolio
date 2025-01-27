@@ -139,9 +139,9 @@ section{
 section:target{
     background-color: #f0f0f0;
 }
-section :nth-child(2n){
+/* section :nth-child(2n){
     background-color:#f1e8e829;
-}
+} */
 section:nth-child(2n+1){
     background-color: white;
 }
@@ -269,16 +269,128 @@ section:nth-child(2n+1){
 }
 /* education part  */
 .education-details {
-    .education-details {
-        width: 70%;
-        margin: auto;
-        text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
-        color: grey;
-        line-height: 1.5;
-    }
-    .education-details h3 {
-        color: #2857a4;
-        margin: 10px 0;
-    }
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.5;
 }
+.education-details h3 {
+    color: #2857a4;
+    margin: 10px 0;
+}
+/* styling for contact part  */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+#contact-form{
+    margin-left: 20%;
+}
+#contact-container{
+    display: flex;
+}
+#my-details-container{
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3{
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container{
+    width: 50%;
+}
+
+.my-details-info-container p{
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    /*#2857a4*/
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* MyPortfolio sucessfully completed  */
